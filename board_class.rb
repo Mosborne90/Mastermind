@@ -63,7 +63,7 @@ module BoardClass
     end
 
     def check_code_solved
-      if @code_array == $code_breaker.attempts[-1]
+      if @code == $code_breaker.attempts[-1]
         @winner = "CB"
         $game_active = false
       end
